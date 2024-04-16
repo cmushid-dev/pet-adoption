@@ -12,7 +12,7 @@ const start = async() =>{
 start()
 
 const petsArea = async() => {
-    const url = "https://learnwebcode.github.io/bootcamp-pet-data/pets.json"
+    const url = "https://imaginative-semolina-0293e4.netlify.app/.netlify/functions/pets"
     const petsPromise = await fetch(url)
     const petsData = await petsPromise.json()
     petsData.forEach(pet => {
